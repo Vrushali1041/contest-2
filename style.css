@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* left section */
+main .left{
+    /* box-sizing: border-box; */
+    border: 2px solid #262626;
+    border-radius: 25px;
+    background: #262626;
+    margin: 5px;
+    padding: 25px;
+    text-align: center;
+    width: 270px;
+    height: 780px;
+}
+
+main .left img{
+    padding-top: 30px;
+}
+
+h2{
+    color: #FFFFFF;
+}
+
+h5{
+    color: rgba(255, 255, 255, 0.5);
+    margin: 10px;
+}
+
+main button{
+    background: #111111;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    width: 260px;
+    height: 45px;
+    margin: 10px 5px;
+}
+
+/* right section */
+main .section{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #262626;
+    border-radius: 25px;
+    background: #262626;
+    padding: 30px;
+    margin: 5px;
+    height: 380px;
+    width: 940px;
+}
+
+header{
+    padding-bottom: 20px;
+}
+
+p{
+    color: rgba(255, 255, 255, 0.5);
+    width: 430px;
+    font-size: 15px;
+    padding-bottom: 30px;
+    /* padding-right: 10px; */
+}
+
+.image .img-2{
+    width: 480px;
+    height: 300px;
+    margin: 10px;
+    padding-top: 50px;
+}
+
+/* table section */
+.footer{    
+    border: 2px solid #262626;
+    border-radius: 25px;
+    background: #262626;
+    padding: 30px;
+    margin: 5px;
+    height: 320px;
+    width: 940px;
+}
+.footer table{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    width: 940px;
+    height:250px;
+    text-align: left;
+    padding: 16px;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* Viewport less than or equal to 600px */
+@media only screen and (max-width:600px){
+    main{
+        flex-direction: column;
+    }
+    main .left{
+        display: block;
+        width: 380px;
+        height: 600px;
+    }
+    main .section{
+        flex-direction: column;
+        width: 375px;
+        height: 700px;
+    }
+    p{
+        width: 300px;
+        height: 340px;
+    }
+    .image .img-2{
+        width: 330px;
+        height: 200px;
+        margin: 10px;
+        padding-top: 50px;
+    }
+    .footer{
+        display: block;
+        width: 367px;
+        height: 400px;
+        margin: 10px;
+    }
+    .footer table{
+        width: 330px;       
+    }
+
+}
+
+
+
